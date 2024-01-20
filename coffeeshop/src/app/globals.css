@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gray: #9e9797;
+  --blue: rgb(159, 210, 239);
+  --white: #fff
+}
+
+body {
+  color: var(--black);
+ 
+}
+
+.order-button {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 15px 15px;
+  border-radius: 15px;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 30px;
+}
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center the card within the grid */
+}
+
+.grid-img {
+  width: 70%; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grid-price {
+  font-size: 16px;
+  color: #666;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.add-to-cart-btn {
+  background-color: #4caf50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+.total-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+.add-to-cart-btn:hover {
+  background-color: #45a049; 
+}
+
+.remove-from-cart {
+  background-color: #af4c4c; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+.clear-cart {
+  background-color: #e79494; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+
+
+  width: 100%;
+}
+
+.clear-cart {
+  margin-bottom: 100px;
+}
